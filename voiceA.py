@@ -4,7 +4,7 @@ from datetime import datetime
 
 engine = pyttsx3.init()
 
-def cambiar_voz(idioma="es"):
+def cambiar_voz(idioma="en"):
     voces = engine.getProperty('voices')
     for voz in voces:
         if idioma == "es" and "spanish" in voz.name.lower():
@@ -14,29 +14,32 @@ def cambiar_voz(idioma="es"):
             engine.setProperty('voice', voz.id)
             return
 
-def hablar(texto, idioma="es"):
+def hablar(texto, idioma="en"):
     cambiar_voz(idioma)
     engine.say(texto)
     engine.runAndWait()
 
-def escuchar(idioma="es-ES"):
+def escuchar(idioma="en-EN"):
     r = sr.Recognizer()
+
     with sr.Microphone() as source:
-        print("Escuchando...")
+        print("Listening...")
         audio = r.listen(source)
         try:
             comando = r.recognize_google(audio, language=idioma)
-            print(f"Tú dijiste: {comando}")
+            print(f"You Said: {comando}")
             return comando.lower()
         except sr.UnknownValueError:
-            print("No entendí lo que dijiste.")
+            print("I didn't get that.")
             return ""
         except sr.RequestError:
-            print("Error con el servicio de reconocimiento.")
+            print("Error with request.")
             return ""
 
-hablar("¿Qué idioma quieres usar? (es/en)")
+
+hablar("¿What language do you want?")
 comando =  escuchar().strip().lower()
+
 if "english" or "ingles" in comando:
     lang_code = "en-US"
     hablar("Hi, I'm your assistant. How can I help you?", "en")
@@ -44,13 +47,13 @@ else:
     lang_code = "es-ES"
     hablar("Hola, soy tu asistente. ¿En qué puedo ayudarte?", "es")
 
-comando = escuchar(lang_code)
 
-if idioma_usuario == "en":
-    if "time" in comando:
-        hora = datetime.now().strftime("%I:%M %p")
-        hablar(f"The time is {hora}", "en")
-else:
-    if "hora" in comando or "ahora" in comando:
-        hora = datetime.now().strftime("%I:%M %p").replace("AM", "a. m.").replace("PM", "p. m.")
-        hablar(f"Son las {hora}", "es")
+# #comando = escuchar(lang_code)
+# if  :
+#     if "time" in comando:
+#         hora = datetime.now().strftime("%I:%M %p")
+#         hablar(f"The time is {hora}", "en")
+# else:
+#     if "hora" in comando or "ahora" in comando:
+#         hora = datetime.now().strftime("%I:%M %p").replace("AM", "a. m.").replace("PM", "p. m.")
+#         hablar(f"Son las {hora}", "es")
