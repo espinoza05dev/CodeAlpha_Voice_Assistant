@@ -1,0 +1,232 @@
+{
+  "languages": [
+    {
+      "code": "af",
+      "message": "Ek luister..."
+    },
+    {
+      "code": "ar",
+      "message": "أنا أستمع..."
+    },
+    {
+      "code": "bg",
+      "message": "Слушам..."
+    },
+    {
+      "code": "bn",
+      "message": "আমি শুনছি..."
+    },
+    {
+      "code": "ca",
+      "message": "Estic escoltant..."
+    },
+    {
+      "code": "cs",
+      "message": "Poslouchám..."
+    },
+    {
+      "code": "cy",
+      "message": "Rwy'n gwrando..."
+    },
+    {
+      "code": "da",
+      "message": "Jeg lytter..."
+    },
+    {
+      "code": "de",
+      "message": "Ich höre zu..."
+    },
+    {
+      "code": "el",
+      "message": "Ακούω..."
+    },
+    {
+      "code": "en",
+      "message": "I am listening..."
+    },
+    {
+      "code": "es",
+      "message": "Estoy escuchando..."
+    },
+    {
+      "code": "et",
+      "message": "Ma kuulan..."
+    },
+    {
+      "code": "fa",
+      "message": "من گوش می‌دهم..."
+    },
+    {
+      "code": "fi",
+      "message": "Kuuntelen..."
+    },
+    {
+      "code": "fr",
+      "message": "J'écoute..."
+    },
+    {
+      "code": "gu",
+      "message": "હું સાંભળી રહ્યો છું..."
+    },
+    {
+      "code": "he",
+      "message": "אני מקשיב..."
+    },
+    {
+      "code": "hi",
+      "message": "मैं सुन रहा हूँ..."
+    },
+    {
+      "code": "hr",
+      "message": "Slušam..."
+    },
+    {
+      "code": "hu",
+      "message": "Hallgatok..."
+    },
+    {
+      "code": "id",
+      "message": "Saya mendengarkan..."
+    },
+    {
+      "code": "it",
+      "message": "Sto ascoltando..."
+    },
+    {
+      "code": "ja",
+      "message": "聞いています..."
+    },
+    {
+      "code": "jv",
+      "message": "Aku ngrungokake..."
+    },
+    {
+      "code": "kn",
+      "message": "ನಾನು ಕೇಳುತ್ತಿದ್ದೇನೆ..."
+    },
+    {
+      "code": "ko",
+      "message": "듣고 있어요..."
+    },
+    {
+      "code": "lt",
+      "message": "Klausausi..."
+    },
+    {
+      "code": "lv",
+      "message": "Es klausos..."
+    },
+    {
+      "code": "ml",
+      "message": "ഞാൻ കേൾക്കുന്നു..."
+    },
+    {
+      "code": "mr",
+      "message": "मी ऐकत आहे..."
+    },
+    {
+      "code": "ms",
+      "message": "Saya sedang mendengar..."
+    },
+    {
+      "code": "ne",
+      "message": "म सुन्दै छु..."
+    },
+    {
+      "code": "nl",
+      "message": "Ik luister..."
+    },
+    {
+      "code": "no",
+      "message": "Jeg lytter..."
+    },
+    {
+      "code": "pa",
+      "message": "ਮੈਂ ਸੁਣ ਰਿਹਾ ਹਾਂ..."
+    },
+    {
+      "code": "pl",
+      "message": "Słucham..."
+    },
+    {
+      "code": "pt",
+      "message": "Estou ouvindo..."
+    },
+    {
+      "code": "ro",
+      "message": "Ascult..."
+    },
+    {
+      "code": "ru",
+      "message": "Я слушаю..."
+    },
+    {
+      "code": "sk",
+      "message": "Počúvam..."
+    },
+    {
+      "code": "sl",
+      "message": "Poslušam..."
+    },
+    {
+      "code": "so",
+      "message": "Waxaan dhageysanayaa..."
+    },
+    {
+      "code": "sq",
+      "message": "Po dëgjoj..."
+    },
+    {
+      "code": "sv",
+      "message": "Jag lyssnar..."
+    },
+    {
+      "code": "sw",
+      "message": "Ninasikiliza..."
+    },
+    {
+      "code": "ta",
+      "message": "நான் கேட்கிறேன்..."
+    },
+    {
+      "code": "te",
+      "message": "నేను వినిపిస్తాను..."
+    },
+    {
+      "code": "th",
+      "message": "ฉันกำลังฟัง..."
+    },
+    {
+      "code": "tl",
+      "message": "Nakikinig ako..."
+    },
+    {
+      "code": "tr",
+      "message": "Dinliyorum..."
+    },
+    {
+      "code": "uk",
+      "message": "Я слухаю..."
+    },
+    {
+      "code": "ur",
+      "message": "میں سن رہا ہوں..."
+    },
+    {
+      "code": "vi",
+      "message": "Tôi đang nghe..."
+    },
+    {
+      "code": "zh",
+      "message": "我在听..."
+    },
+    {
+      "code": "zh-cn",
+      "message": "我在听..."
+    },
+    {
+      "code": "zh-tw",
+      "message": "我在聽..."
+    }
+  ]
+}
