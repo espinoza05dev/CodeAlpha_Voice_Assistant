@@ -6,18 +6,17 @@ r = sr.Recognizer()
 
 def recoglanguage():
     with sr.Microphone() as source:
-        print("Habla algo para detectar el idioma...")
+        print("You need to Speak to detect any laguage...")
         audio = r.listen(source)
 
     try:
-        texto = r.recognize_google(audio)
+        text = r.recognize_google(audio)
 
-        idioma_detectado = detect(texto)
-        print("Idioma detectado:", idioma_detectado)
-
+        detected_language = detect(text)
+        return detected_language
     except exception as i:
-        print(f"hubo un error: {i}")
+        print(f"there was an issue: {i}")
     except sr.UnknownValueError:
-        print("No se entendió lo que dijiste.")
+        print("it was not understood.")
     except sr.RequestError as e:
         print(f"Error al conectar con el servicio: {e}")
