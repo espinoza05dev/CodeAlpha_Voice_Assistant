@@ -2,231 +2,288 @@
   "languages": [
     {
       "code": "af",
-      "message": "Ek luister..."
+      "message": "Ek luister...",
+      "comand": "stop"
     },
     {
       "code": "ar",
-      "message": "أنا أستمع..."
+      "message": "أنا أستمع...",
+      "comand": "توقف"
     },
     {
       "code": "bg",
-      "message": "Слушам..."
+      "message": "Слушам...",
+      "comand": "изход"
     },
     {
       "code": "bn",
-      "message": "আমি শুনছি..."
+      "message": "আমি শুনছি...",
+      "comand": "বের হও"
     },
     {
       "code": "ca",
-      "message": "Estic escoltant..."
+      "message": "Estic escoltant...",
+      "comand": "surt"
     },
     {
       "code": "cs",
-      "message": "Poslouchám..."
+      "message": "Poslouchám...",
+      "comand": "ukončit"
     },
     {
       "code": "cy",
-      "message": "Rwy'n gwrando..."
+      "message": "Rwy'n gwrando...",
+      "comand": "gadael"
     },
     {
       "code": "da",
-      "message": "Jeg lytter..."
+      "message": "Jeg lytter...",
+      "comand": "afslut"
     },
     {
       "code": "de",
-      "message": "Ich höre zu..."
+      "message": "Ich höre zu...",
+      "comand": "beenden"
     },
     {
       "code": "el",
-      "message": "Ακούω..."
+      "message": "Ακούω...",
+      "comand": "έξοδος"
     },
     {
       "code": "en",
-      "message": "I am listening..."
+      "message": "I am listening...",
+      "comand": "exit"
     },
     {
       "code": "es",
-      "message": "Estoy escuchando..."
+      "message": "Estoy escuchando...",
+      "comand": "salir"
     },
     {
       "code": "et",
-      "message": "Ma kuulan..."
+      "message": "Ma kuulan...",
+      "comand": "välju"
     },
     {
       "code": "fa",
-      "message": "من گوش می‌دهم..."
+      "message": "من گوش می‌دهم...",
+      "comand": "خروج"
     },
     {
       "code": "fi",
-      "message": "Kuuntelen..."
+      "message": "Kuuntelen...",
+      "comand": "lopeta"
     },
     {
       "code": "fr",
-      "message": "J'écoute..."
+      "message": "J'écoute...",
+      "comand": "quitter"
     },
     {
       "code": "gu",
-      "message": "હું સાંભળી રહ્યો છું..."
+      "message": "હું સાંભળી રહ્યો છું...",
+      "comand": "બહાર નીકળો"
     },
     {
       "code": "he",
-      "message": "אני מקשיב..."
+      "message": "אני מקשיב...",
+      "comand": "צא"
     },
     {
       "code": "hi",
-      "message": "मैं सुन रहा हूँ..."
+      "message": "मैं सुन रहा हूँ...",
+      "comand": "बाहर जाएं"
     },
     {
       "code": "hr",
-      "message": "Slušam..."
+      "message": "Slušam...",
+      "comand": "izađi"
     },
     {
       "code": "hu",
-      "message": "Hallgatok..."
+      "message": "Hallgatok...",
+      "comand": "kilépés"
     },
     {
       "code": "id",
-      "message": "Saya mendengarkan..."
+      "message": "Saya mendengarkan...",
+      "comand": "keluar"
     },
     {
       "code": "it",
-      "message": "Sto ascoltando..."
+      "message": "Sto ascoltando...",
+      "comand": "esci"
     },
     {
       "code": "ja",
-      "message": "聞いています..."
+      "message": "聞いています...",
+      "comand": "終了"
     },
     {
       "code": "jv",
-      "message": "Aku ngrungokake..."
+      "message": "Aku ngrungokake...",
+      "comand": "metu"
     },
     {
       "code": "kn",
-      "message": "ನಾನು ಕೇಳುತ್ತಿದ್ದೇನೆ..."
+      "message": "ನಾನು ಕೇಳುತ್ತಿದ್ದೇನೆ...",
+      "comand": "ಹೊರಹೊಗೆಯಿರಿ"
     },
     {
       "code": "ko",
-      "message": "듣고 있어요..."
+      "message": "듣고 있어요...",
+      "comand": "종료"
     },
     {
       "code": "lt",
-      "message": "Klausausi..."
+      "message": "Klausausi...",
+      "comand": "išeiti"
     },
     {
       "code": "lv",
-      "message": "Es klausos..."
+      "message": "Es klausos...",
+      "comand": "iziet"
     },
     {
       "code": "ml",
-      "message": "ഞാൻ കേൾക്കുന്നു..."
+      "message": "ഞാൻ കേൾക്കുന്നു...",
+      "comand": "പുറത്ത് പോകുക"
     },
     {
       "code": "mr",
-      "message": "मी ऐकत आहे..."
+      "message": "मी ऐकत आहे...",
+      "comand": "बाहेर पडा"
     },
     {
       "code": "ms",
-      "message": "Saya sedang mendengar..."
+      "message": "Saya sedang mendengar...",
+      "comand": "keluar"
     },
     {
       "code": "ne",
-      "message": "म सुन्दै छु..."
+      "message": "म सुन्दै छु...",
+      "comand": "बाहिर निस्कनुहोस्"
     },
     {
       "code": "nl",
-      "message": "Ik luister..."
+      "message": "Ik luister...",
+      "comand": "afsluiten"
     },
     {
       "code": "no",
-      "message": "Jeg lytter..."
+      "message": "Jeg lytter...",
+      "comand": "avslutt"
     },
     {
       "code": "pa",
-      "message": "ਮੈਂ ਸੁਣ ਰਿਹਾ ਹਾਂ..."
+      "message": "ਮੈਂ ਸੁਣ ਰਿਹਾ ਹਾਂ...",
+      "comand": "ਬਾਹਰ ਜਾਓ"
     },
     {
       "code": "pl",
-      "message": "Słucham..."
+      "message": "Słucham...",
+      "comand": "wyjście"
     },
     {
       "code": "pt",
-      "message": "Estou ouvindo..."
+      "message": "Estou ouvindo...",
+      "comand": "sair"
     },
     {
       "code": "ro",
-      "message": "Ascult..."
+      "message": "Ascult...",
+      "comand": "ieșire"
     },
     {
       "code": "ru",
-      "message": "Я слушаю..."
+      "message": "Я слушаю...",
+      "comand": "выход"
     },
     {
       "code": "sk",
-      "message": "Počúvam..."
+      "message": "Počúvam...",
+      "comand": "ukončiť"
     },
     {
       "code": "sl",
-      "message": "Poslušam..."
+      "message": "Poslušam...",
+      "comand": "izhod"
     },
     {
       "code": "so",
-      "message": "Waxaan dhageysanayaa..."
+      "message": "Waxaan dhageysanayaa...",
+      "comand": "bax"
     },
     {
       "code": "sq",
-      "message": "Po dëgjoj..."
+      "message": "Po dëgjoj...",
+      "comand": "dil"
     },
     {
       "code": "sv",
-      "message": "Jag lyssnar..."
+      "message": "Jag lyssnar...",
+      "comand": "avsluta"
     },
     {
       "code": "sw",
-      "message": "Ninasikiliza..."
+      "message": "Ninasikiliza...",
+      "comand": "ondoka"
     },
     {
       "code": "ta",
-      "message": "நான் கேட்கிறேன்..."
+      "message": "நான் கேட்கிறேன்...",
+      "comand": "வெளியேறு"
     },
     {
       "code": "te",
-      "message": "నేను వినిపిస్తాను..."
+      "message": "నేను వినిపిస్తాను...",
+      "comand": "బయటకు వెళ్లండి"
     },
     {
       "code": "th",
-      "message": "ฉันกำลังฟัง..."
+      "message": "ฉันกำลังฟัง...",
+      "comand": "ออกไป"
     },
     {
       "code": "tl",
-      "message": "Nakikinig ako..."
+      "message": "Nakikinig ako...",
+      "comand": "lumabas"
     },
     {
       "code": "tr",
-      "message": "Dinliyorum..."
+      "message": "Dinliyorum...",
+      "comand": "çıkış"
     },
     {
       "code": "uk",
-      "message": "Я слухаю..."
+      "message": "Я слухаю...",
+      "comand": "вийти"
     },
     {
       "code": "ur",
-      "message": "میں سن رہا ہوں..."
+      "message": "میں سن رہا ہوں...",
+      "comand": "باہر نکلنا"
     },
     {
       "code": "vi",
-      "message": "Tôi đang nghe..."
+      "message": "Tôi đang nghe...",
+      "comand": "thoát"
     },
     {
       "code": "zh",
-      "message": "我在听..."
+      "message": "我在听...",
+      "comand": "退出"
     },
     {
       "code": "zh-cn",
-      "message": "我在听..."
+      "message": "我在听...",
+      "comand": "退出"
     },
     {
       "code": "zh-tw",
-      "message": "我在聽..."
+      "message": "我在聽...",
+      "comand": "退出"
     }
   ]
 }
