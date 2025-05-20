@@ -1,22 +1,29 @@
+import sys
 from logging import exception
 import speech_recognition as sr
-from langdetect import detect
+import Json_Languages
+import SetLenguage
 
-r = sr.Recognizer()
-
-def recoglanguage():
-    with sr.Microphone() as source:
-        print("You need to Speak to detect any laguage...")
-        audio = r.listen(source)
-
+#detect what language the person is speaking
+# 57 languages that can be detected
+def listening(languages):
+#in case there is any issue the try
     try:
-        text = r.recognize_google(audio)
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+            audio = r.listen(source)
+        SetLenguage.speak("Say something...")
+        comand = r.recognize_google(audio,language=languages)
 
-        detected_language = detect(text)
-        return detected_language
+        exit_program = comand.lower()
+
+        if exit_program in Json_Languages.supoorted_languages():
+            sys.exit()
+
     except exception as i:
         print(f"there was an issue: {i}")
     except sr.UnknownValueError:
         print("it was not understood.")
     except sr.RequestError as e:
         print(f"Error al conectar con el servicio: {e}")
+
