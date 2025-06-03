@@ -1,25 +1,22 @@
-import speech_recognition as sr
-import SetLenguage as st
-import Json_Languages as jl
-import RecognizeLanguage as rl
-# 57 languages that can be detected
-
-#has to detect what language the person is speaking
-def listening(idioma):
-    r = sr.Recognizer()
-    try:
-        with sr.Microphone() as source:
-            st.speak()
-            audio = r.listen(source)
-            comand = r.recognize_google(audio, language=idioma)
-
-    except sr.UnknownValueError:
-        st.speak("I did no get that.")
-    except sr.RequestError:
-        st.speak("Error with request.")
+from Json_Languages import end_program, supoorted_languages
+from SetLenguage import *
+from RecognizeLanguage import *
+import time
+keep_going = True
+language = detect_language()
 
 
-rl.recoglanguage()
+if language:
+    speak(language)
+    while keep_going:
+        command = listen_in_language(language)
+        if command:
+            speak(language, f"You said: {command}")
+            if supoorted_languages(1):
+                speak(language, f"{time.strftime("%H:%M:%S")} or {time.strftime("%I:%M:%S")}")
+            # if supoorted_languages(2):
 
-comand = listening().strip().lower()
-
+        elif end_program() in command:
+            keep_going = False
+else:
+    print("couldn't detect language.")

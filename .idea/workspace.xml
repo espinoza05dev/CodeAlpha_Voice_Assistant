@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="work with speech_recognition">
-      <change afterPath="$PROJECT_DIR$/SetLenguage.py" afterDir="false" />
+    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="Done, recognize 57 languages and has a exit command">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assistant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json_Languages.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RecognizeLanguage.py" beforeDir="false" afterPath="$PROJECT_DIR$/RecognizeLanguage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voiceA.py" beforeDir="false" afterPath="$PROJECT_DIR$/voiceA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/words_palabras" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/words/Languages.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,30 +47,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.BasePrueba.executor": "Run",
-    "Python.Json_Languages.executor": "Run",
-    "Python.RecognizeLanguage.executor": "Run",
-    "Python.SetLenguage.executor": "Run",
-    "Python.abrir Json.executor": "Run",
-    "Python.voiceA.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/artur/Programming/PycharmProjects/CursoPython",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Assistant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BasePrueba.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Json_Languages.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RecognizeLanguage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SetLenguage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.abrir Json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enhanced_voice_assistant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.voiceA.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/artur/Programming/PycharmProjects/CursoPython&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\artur\PycharmProjects\VoiceAssistant\words" />
       <recent name="C:\Users\artur\PycharmProjects\VoiceAssistant" />
+      <recent name="C:\Users\artur\PycharmProjects\VoiceAssistant\words" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -95,7 +97,20 @@
       <workItem from="1747271672523" duration="4860000" />
       <workItem from="1747325700986" duration="15452000" />
       <workItem from="1747365153056" duration="2282000" />
-      <workItem from="1747440962643" duration="7021000" />
+      <workItem from="1747440962643" duration="9541000" />
+      <workItem from="1747507153441" duration="10753000" />
+      <workItem from="1747673450002" duration="3625000" />
+      <workItem from="1747689445290" duration="6961000" />
+      <workItem from="1747786936758" duration="7304000" />
+      <workItem from="1747956285883" duration="7327000" />
+      <workItem from="1748007812321" duration="14673000" />
+      <workItem from="1748037660615" duration="7554000" />
+      <workItem from="1748212481553" duration="1915000" />
+      <workItem from="1748398401294" duration="5351000" />
+      <workItem from="1748646694228" duration="3833000" />
+      <workItem from="1748701650829" duration="2583000" />
+      <workItem from="1748741444158" duration="11145000" />
+      <workItem from="1748989596291" duration="2154000" />
     </task>
     <task id="LOCAL-00001" summary="Begining Test and Coding">
       <option name="closed" value="true" />
@@ -129,7 +144,71 @@
       <option name="project" value="LOCAL" />
       <updated>1747330928147</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="missing some things to add">
+      <option name="closed" value="true" />
+      <created>1747452307984</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747452307984</updated>
+    </task>
+    <task id="LOCAL-00006" summary="languages that can be supported by speech_recognition with their message">
+      <option name="closed" value="true" />
+      <created>1747452428824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747452428824</updated>
+    </task>
+    <task id="LOCAL-00007" summary="its needed that the computer has more than one language, this is for the accent of each voice">
+      <option name="closed" value="true" />
+      <created>1747452528728</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747452528728</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Done, recognize 57 languages">
+      <option name="closed" value="true" />
+      <created>1747452598938</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747452598938</updated>
+    </task>
+    <task id="LOCAL-00009" summary="..">
+      <option name="closed" value="true" />
+      <created>1747452621240</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747452621240</updated>
+    </task>
+    <task id="LOCAL-00010" summary="..">
+      <option name="closed" value="true" />
+      <created>1747705555266</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747705555266</updated>
+    </task>
+    <task id="LOCAL-00011" summary="now can return code_lang or command_lang">
+      <option name="closed" value="true" />
+      <created>1747706350847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747706350847</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Done, recognize 57 languages and has a exit command">
+      <option name="closed" value="true" />
+      <created>1747706742922</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747706742922</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,14 +230,23 @@
     <MESSAGE value="Here it is going to be some words in spanish and english" />
     <MESSAGE value="Assistan can respond english and spanish" />
     <MESSAGE value="work with speech_recognition" />
-    <option name="LAST_COMMIT_MESSAGE" value="work with speech_recognition" />
+    <MESSAGE value="missing some things to add" />
+    <MESSAGE value="languages that can be supported by speech_recognition with their message" />
+    <MESSAGE value="its needed that the computer has more than one language, this is for the accent of each voice" />
+    <MESSAGE value="Done, recognize 57 languages" />
+    <MESSAGE value=".." />
+    <MESSAGE value="now can return code_lang or command_lang" />
+    <MESSAGE value="Done, recognize 57 languages and has a exit command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done, recognize 57 languages and has a exit command" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VoiceAssistant$SetLenguage.coverage" NAME="SetLenguage Coverage Results" MODIFIED="1747365536247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$voiceA.coverage" NAME="voiceA Coverage Results" MODIFIED="1747276933708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceAssistant$Json_Languages.coverage" NAME="Json_Languages Coverage Results" MODIFIED="1747448599152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$Json_Languages.coverage" NAME="Json_Languages Coverage Results" MODIFIED="1748990215178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$abrir_Json.coverage" NAME="abrir Json Coverage Results" MODIFIED="1747357963407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceAssistant$RecognizeLanguage.coverage" NAME="RecognizeLanguage Coverage Results" MODIFIED="1747327648219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$enhanced_voice_assistant.coverage" NAME="enhanced_voice_assistant Coverage Results" MODIFIED="1748744084939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$RecognizeLanguage.coverage" NAME="RecognizeLanguage Coverage Results" MODIFIED="1748405316815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1748991555176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$BasePrueba.coverage" NAME="BasePrueba Coverage Results" MODIFIED="1747165998801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
