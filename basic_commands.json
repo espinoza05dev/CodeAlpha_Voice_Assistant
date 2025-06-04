@@ -1,0 +1,44 @@
+{
+  "basic_voice_commands": {
+    "time": {
+      "keywords": ["what time is it", "time", "tell me the time", "current time"],
+      "response": "The current time is"
+    },
+    "weather": {
+      "keywords": ["weather", "what's the weather", "how's the weather", "weather forecast"],
+      "response": "Let me check the weather for you"
+    },
+    "music": {
+      "keywords": ["play music", "music", "start music", "turn on music"],
+      "response": "Playing music now"
+    },
+    "stop_music": {
+      "keywords": ["stop music", "pause music", "turn off music", "stop playing"],
+      "response": "Music stopped"
+    },
+    "volume": {
+      "keywords": ["volume up", "turn up volume", "louder", "increase volume"],
+      "response": "Increasing volume"
+    },
+    "search": {
+      "keywords": ["search for", "look up", "find", "google"],
+      "response": "What would you like me to search for?"
+    },
+    "hello": {
+      "keywords": ["hello", "hi", "hey", "good morning", "good afternoon"],
+      "response": "Hello! How can I help you today?"
+    },
+    "help": {
+      "keywords": ["help", "what can you do", "commands", "assist me"],
+      "response": "I can help with time, weather, music, searches, and more. Just ask me!"
+    },
+    "joke": {
+      "keywords": ["tell me a joke", "joke", "make me laugh", "funny"],
+      "response": "Here's a joke for you"
+    },
+    "exit": {
+      "keywords": ["stop", "exit", "quit", "goodbye", "bye", "turn off"],
+      "response": "Goodbye! Have a great day!"
+    }
+  }
+}
