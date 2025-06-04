@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="...">
-      <change afterPath="$PROJECT_DIR$/country_weather.py" afterDir="false" />
+    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="weather added">
+      <change afterPath="$PROJECT_DIR$/music.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assistant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant.py" afterDir="false" />
     </list>
@@ -22,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -47,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.Assistant.executor": "Run",
+    "Python.Assistant.executor": "Profiler",
     "Python.BasePrueba.executor": "Run",
     "Python.Json_Languages.executor": "Run",
     "Python.RecognizeLanguage.executor": "Run",
@@ -55,9 +60,10 @@
     "Python.abrir Json.executor": "Run",
     "Python.country_weather.executor": "Run",
     "Python.enhanced_voice_assistant.executor": "Run",
+    "Python.music.executor": "Run",
     "Python.voiceA.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "TESTING",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/artur/Programming/PycharmProjects/CursoPython",
     "node.js.detected.package.eslint": "true",
@@ -109,7 +115,7 @@
       <workItem from="1748646694228" duration="3833000" />
       <workItem from="1748701650829" duration="2583000" />
       <workItem from="1748741444158" duration="11145000" />
-      <workItem from="1748989596291" duration="7052000" />
+      <workItem from="1748989596291" duration="17657000" />
     </task>
     <task id="LOCAL-00001" summary="Begining Test and Coding">
       <option name="closed" value="true" />
@@ -215,7 +221,31 @@
       <option name="project" value="LOCAL" />
       <updated>1748991844972</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="for the weather">
+      <option name="closed" value="true" />
+      <created>1748998361127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748998361127</updated>
+    </task>
+    <task id="LOCAL-00015" summary=".">
+      <option name="closed" value="true" />
+      <created>1748998375696</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748998375696</updated>
+    </task>
+    <task id="LOCAL-00016" summary="weather added">
+      <option name="closed" value="true" />
+      <created>1748998389989</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748998389989</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,17 +275,21 @@
     <MESSAGE value="now can return code_lang or command_lang" />
     <MESSAGE value="Done, recognize 57 languages and has a exit command" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="for the weather" />
+    <MESSAGE value="." />
+    <MESSAGE value="weather added" />
+    <option name="LAST_COMMIT_MESSAGE" value="weather added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VoiceAssistant$SetLenguage.coverage" NAME="SetLenguage Coverage Results" MODIFIED="1747365536247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$voiceA.coverage" NAME="voiceA Coverage Results" MODIFIED="1747276933708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceAssistant$Json_Languages.coverage" NAME="Json_Languages Coverage Results" MODIFIED="1748990215178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$Json_Languages.coverage" NAME="Json_Languages Coverage Results" MODIFIED="1749010914759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$country_weather.coverage" NAME="country_weather Coverage Results" MODIFIED="1748994385455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$music.coverage" NAME="music Coverage Results" MODIFIED="1748998533868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$abrir_Json.coverage" NAME="abrir Json Coverage Results" MODIFIED="1747357963407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$enhanced_voice_assistant.coverage" NAME="enhanced_voice_assistant Coverage Results" MODIFIED="1748744084939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$RecognizeLanguage.coverage" NAME="RecognizeLanguage Coverage Results" MODIFIED="1748405316815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1748996548923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1749010697542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$BasePrueba.coverage" NAME="BasePrueba Coverage Results" MODIFIED="1747165998801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
