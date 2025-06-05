@@ -11,45 +11,81 @@ try:
     keep_going = True
 
     if language:
-        speak(language)
+        speak(language,"Say something")
         while keep_going:
             command = listen_in_language(language)
             if command:
                 speak(language, f"You said: {command}")
 
-                if command in commads_voice(1):
+                #time
+                if command in commands_voice(1):
                     speak(language, response_voice(1))
                     time.sleep(2)
                     speak(language, f"{time.strftime("%H:%M:%S")} or {time.strftime("%I:%M:%S")}")
 
-                if command in commads_voice(2):
+                #weather
+                if command in commands_voice(2):
                     speak(language, response_voice(2))
                     if city and lat and lon: speak(language, f"City: {city}, weather:{weather_open_meteo(lat, lon)}")
                 else:
                     speak("I could not get the weather")
 
-                if command in commads_voice(3):
-                    speak(language, response_voice(3))
-                    abrir_reproductor_web()
-                if command in commads_voice(4):
-                    speak(language, response_voice(4))
+                #music
+                if command in commands_voice(3):
+                    speak(language, "Where do you want to play music?")
+                    services = listen_in_language(language)
+                    speak(language, f"You said {services}")
+
+                    available_services = ["youtube", "spotify", "soundcloud", "apple music", "amazon music", "deezer",
+                                          "tidal"]
+
+                    services_lower = services.lower() if services else ""
+
+                    service_found = any(service in services_lower for service in available_services)
+
+                    if service_found:
+                        speak(language, "What music would you like to play?")
+                        search = listen_in_language(language)
+                        speak(language, f"You said {search}")
+
+                        if search and search.strip():
+                            play_music_web(services, search)
+                        else:
+                            speak(language, "I didn't catch what music you want to play")
+                    else:
+                        speak(language, "No service available or recognized")
+
+                #stop music
+                if command in commands_voice(4):
+                    # speak(language, response_voice(4))
                     print()
-                if command in commads_voice(5):
+
+                #volume
+                if command in commands_voice(5):
                     speak(language, response_voice(5))
                     print()
-                if command in commads_voice(6):
+
+                #search
+                if command in commands_voice(6):
                     speak(language, response_voice(6))
                     print()
-                if command in commads_voice(7):
+
+                #hello
+                if command in commands_voice(7):
                     speak(language, response_voice(7))
 
-                if command in commads_voice(8):
+
+                #help
+                if command in commands_voice(8):
                     speak(language, response_voice(8))
-                if command in commads_voice(9):
+
+                #joke
+                if command in commands_voice(9):
                     speak(language, response_voice(9))
                     print()
 
-                if command in commads_voice(10):
+                #exit
+                if command in commands_voice(10):
                     speak(language, response_voice(10))
                     keep_going = False
                 else:
