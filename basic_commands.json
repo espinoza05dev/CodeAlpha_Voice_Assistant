@@ -37,7 +37,7 @@
       "response": "Here's a joke for you"
     },
     "exit": {
-      "keywords": ["stop", "exit", "quit", "goodbye", "bye", "turn off"],
+      "keywords": ["stop", "exit", "quit", "goodbye", "bye", "turn off","off"],
       "response": "Goodbye! Have a great day!"
     }
   }

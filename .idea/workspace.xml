@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="weather added">
-      <change afterPath="$PROJECT_DIR$/music.py" afterDir="false" />
+    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assistant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/basic_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music.py" beforeDir="false" afterPath="$PROJECT_DIR$/music.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +51,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Assistant.executor": "Profiler",
-    "Python.BasePrueba.executor": "Run",
-    "Python.Json_Languages.executor": "Run",
-    "Python.RecognizeLanguage.executor": "Run",
-    "Python.SetLenguage.executor": "Run",
-    "Python.abrir Json.executor": "Run",
-    "Python.country_weather.executor": "Run",
-    "Python.enhanced_voice_assistant.executor": "Run",
-    "Python.music.executor": "Run",
-    "Python.voiceA.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "TESTING",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/artur/Programming/PycharmProjects/CursoPython",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Assistant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BasePrueba.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Json_Languages.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RecognizeLanguage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SetLenguage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.abrir Json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.country_weather.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enhanced_voice_assistant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.music.executor&quot;: &quot;Run&quot;,
+    &quot;Python.voiceA.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TESTING&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/artur/Programming/PycharmProjects/CursoPython&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\artur\PycharmProjects\VoiceAssistant" />
@@ -115,7 +116,9 @@
       <workItem from="1748646694228" duration="3833000" />
       <workItem from="1748701650829" duration="2583000" />
       <workItem from="1748741444158" duration="11145000" />
-      <workItem from="1748989596291" duration="17657000" />
+      <workItem from="1748989596291" duration="18991000" />
+      <workItem from="1749077639717" duration="16833000" />
+      <workItem from="1749126021222" duration="1234000" />
     </task>
     <task id="LOCAL-00001" summary="Begining Test and Coding">
       <option name="closed" value="true" />
@@ -245,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748998389989</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="there is missing lots of thins but it is almost finished">
+      <option name="closed" value="true" />
+      <created>1749011649236</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749011649236</updated>
+    </task>
+    <task id="LOCAL-00018" summary="json_languages is optimized">
+      <option name="closed" value="true" />
+      <created>1749012246273</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749012246273</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +297,9 @@
     <MESSAGE value="for the weather" />
     <MESSAGE value="." />
     <MESSAGE value="weather added" />
-    <option name="LAST_COMMIT_MESSAGE" value="weather added" />
+    <MESSAGE value="there is missing lots of thins but it is almost finished" />
+    <MESSAGE value="json_languages is optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="json_languages is optimized" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VoiceAssistant$SetLenguage.coverage" NAME="SetLenguage Coverage Results" MODIFIED="1747365536247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -289,7 +310,7 @@
     <SUITE FILE_PATH="coverage/VoiceAssistant$abrir_Json.coverage" NAME="abrir Json Coverage Results" MODIFIED="1747357963407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$enhanced_voice_assistant.coverage" NAME="enhanced_voice_assistant Coverage Results" MODIFIED="1748744084939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$RecognizeLanguage.coverage" NAME="RecognizeLanguage Coverage Results" MODIFIED="1748405316815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1749010697542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1749097063032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$BasePrueba.coverage" NAME="BasePrueba Coverage Results" MODIFIED="1747165998801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
