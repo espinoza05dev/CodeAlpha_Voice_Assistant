@@ -22,7 +22,7 @@ try:
                 #time
                 if command in commands_voice(1):
                     speak(language, response_voice(1))
-                    time.sleep(2)
+                    time.sleep(1)
                     speak(language, f"{time.strftime("%H:%M:%S")} or {time.strftime("%I:%M:%S")}")
 
                 #weather
@@ -93,7 +93,7 @@ try:
                         else:
                             browser_to_use = None
 
-                        search_engine = "google"  # por defecto
+                        search_engine = "google"
                         if search_query:
                             query_lower = search_query.lower()
                             if "bing" in query_lower:
@@ -112,43 +112,43 @@ try:
                     else:
                         speak(language, "I didn't catch what you want to search for")
 
-            if "search youtube" in command.lower() or "youtube search" in command.lower():
-                speak(language, "What do you want to search on YouTube?")
-                query = listen_in_language(language)
-                if query:
-                    result = browser_controller.search_youtube(query)
+                    if "search youtube" in command.lower() or "youtube search" in command.lower():
+                        speak(language, "What do you want to search on YouTube?")
+                        query = listen_in_language(language)
+                    if query:
+                        result = browser_controller.search_youtube(query)
+                        speak(language, result)
+
+                    if "search wikipedia" in command.lower() or "wikipedia search" in command.lower():
+                        speak(language, "What do you want to search on Wikipedia?")
+                    query = listen_in_language(language)
+                    if query:
+                        result = browser_controller.search_wikipedia(query)
+                        speak(language, result)
+
+                    if "open facebook" in command.lower():
+                        result = browser_controller.open_social_media("facebook")
+                        speak(language, result)
+                    elif "open twitter" in command.lower():
+                        result = browser_controller.open_social_media("twitter")
+                        speak(language, result)
+                    elif "open instagram" in command.lower():
+                        result = browser_controller.open_social_media("instagram")
+                        speak(language, result)
+
+                    if "open browser" in command.lower():
+                        available_browsers = browser_controller.get_available_browsers()
+
+                    browser_to_open = None
+                    command_lower = command.lower()
+
+                    for browser in available_browsers:
+                        if browser in command_lower:
+                            browser_to_open = browser
+                            break
+
+                    result = browser_controller.open_browser(browser_to_open)
                     speak(language, result)
-
-            if "search wikipedia" in command.lower() or "wikipedia search" in command.lower():
-                speak(language, "What do you want to search on Wikipedia?")
-                query = listen_in_language(language)
-                if query:
-                    result = browser_controller.search_wikipedia(query)
-                    speak(language, result)
-
-            if "open facebook" in command.lower():
-                result = browser_controller.open_social_media("facebook")
-                speak(language, result)
-            elif "open twitter" in command.lower():
-                result = browser_controller.open_social_media("twitter")
-                speak(language, result)
-            elif "open instagram" in command.lower():
-                result = browser_controller.open_social_media("instagram")
-                speak(language, result)
-
-            if "open browser" in command.lower():
-                available_browsers = browser_controller.get_available_browsers()
-
-                browser_to_open = None
-                command_lower = command.lower()
-
-                for browser in available_browsers:
-                    if browser in command_lower:
-                        browser_to_open = browser
-                        break
-
-                result = browser_controller.open_browser(browser_to_open)
-                speak(language, result)
 
                 #hello
                 if command in commands_voice(7):
@@ -172,3 +172,4 @@ try:
 except Exception as e:
     speak(language,"there was an issue")
     print(f"the issue: {e}")
+
