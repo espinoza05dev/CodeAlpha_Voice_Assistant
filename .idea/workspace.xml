@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/searches.py" afterDir="false" />
+    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,8 @@
       <workItem from="1748989596291" duration="18991000" />
       <workItem from="1749077639717" duration="16833000" />
       <workItem from="1749126021222" duration="3524000" />
-      <workItem from="1749157522733" duration="10550000" />
+      <workItem from="1749157522733" duration="12222000" />
+      <workItem from="1749217906161" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="Begining Test and Coding">
       <option name="closed" value="true" />
@@ -310,7 +311,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749181432301</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="it can search in any OS and any Browser">
+      <option name="closed" value="true" />
+      <created>1749182763865</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1749182763865</updated>
+    </task>
+    <task id="LOCAL-00026" summary=".">
+      <option name="closed" value="true" />
+      <created>1749182776028</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749182776028</updated>
+    </task>
+    <task id="LOCAL-00027" summary="jokes added">
+      <option name="closed" value="true" />
+      <created>1749183185181</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749183185181</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,8 +373,10 @@
     <MESSAGE value=".." />
     <MESSAGE value="play,stop music and audio, reduce and increase volume" />
     <MESSAGE value="More keywords in volume and erased response" />
+    <MESSAGE value="it can search in any OS and any Browser" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="jokes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="jokes added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VoiceAssistant$SetLenguage.coverage" NAME="SetLenguage Coverage Results" MODIFIED="1747365536247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
