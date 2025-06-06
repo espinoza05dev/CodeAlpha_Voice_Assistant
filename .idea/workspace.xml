@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment="..">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assistant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assistant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/basic_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music.py" beforeDir="false" afterPath="$PROJECT_DIR$/music.py" afterDir="false" />
+    <list default="true" id="73ee6bf5-0e9a-4fc1-959b-eb8d495f9ed9" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/searches.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,7 @@
       <workItem from="1748989596291" duration="18991000" />
       <workItem from="1749077639717" duration="16833000" />
       <workItem from="1749126021222" duration="3524000" />
-      <workItem from="1749157522733" duration="9734000" />
+      <workItem from="1749157522733" duration="10550000" />
     </task>
     <task id="LOCAL-00001" summary="Begining Test and Coding">
       <option name="closed" value="true" />
@@ -289,7 +286,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749128319559</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="play,stop music and audio, reduce and increase volume">
+      <option name="closed" value="true" />
+      <created>1749181380736</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749181380736</updated>
+    </task>
+    <task id="LOCAL-00023" summary="More keywords in volume and erased response">
+      <option name="closed" value="true" />
+      <created>1749181420661</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749181420661</updated>
+    </task>
+    <task id="LOCAL-00024" summary=".">
+      <option name="closed" value="true" />
+      <created>1749181432301</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749181432301</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,14 +340,16 @@
     <MESSAGE value="Done, recognize 57 languages and has a exit command" />
     <MESSAGE value="..." />
     <MESSAGE value="for the weather" />
-    <MESSAGE value="." />
     <MESSAGE value="weather added" />
     <MESSAGE value="there is missing lots of thins but it is almost finished" />
     <MESSAGE value="json_languages is optimized" />
     <MESSAGE value="there are different options to play music" />
     <MESSAGE value="only play in the web" />
     <MESSAGE value=".." />
-    <option name="LAST_COMMIT_MESSAGE" value=".." />
+    <MESSAGE value="play,stop music and audio, reduce and increase volume" />
+    <MESSAGE value="More keywords in volume and erased response" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VoiceAssistant$SetLenguage.coverage" NAME="SetLenguage Coverage Results" MODIFIED="1747365536247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -337,7 +360,7 @@
     <SUITE FILE_PATH="coverage/VoiceAssistant$abrir_Json.coverage" NAME="abrir Json Coverage Results" MODIFIED="1747357963407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$enhanced_voice_assistant.coverage" NAME="enhanced_voice_assistant Coverage Results" MODIFIED="1748744084939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$RecognizeLanguage.coverage" NAME="RecognizeLanguage Coverage Results" MODIFIED="1748405316815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1749180635170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VoiceAssistant$Assistant.coverage" NAME="Assistant Coverage Results" MODIFIED="1749181157366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VoiceAssistant$BasePrueba.coverage" NAME="BasePrueba Coverage Results" MODIFIED="1747165998801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
