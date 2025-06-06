@@ -1,6 +1,7 @@
 from Json_Languages import *
 from RecognizeLanguage import *
 from country_weather import *
+from jokes import *
 from music import *
 from searches import *
 import time
@@ -160,7 +161,7 @@ try:
                 #joke
                 if command in commands_voice(9):
                     speak(language, response_voice(9))
-                    #poner alguna broma
+                    get_random_joke()
 
                 #exit
                 if command in commands_voice(10):
