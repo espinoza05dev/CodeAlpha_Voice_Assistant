@@ -1,125 +1,211 @@
 import os
 import subprocess
+import time
+import pyautogui
 import webbrowser
 from urllib.parse import quote
+from SetLenguage import speak
 
-def reproducir_audio_pygame(archivo):
-    """Reproduce audio usando pygame"""
-    try:
-        import pygame
-        pygame.mixer.init()
-        pygame.mixer.music.load(archivo)
-        pygame.mixer.music.play()
-        return f"Reproduciendo {archivo} con pygame"
-    except ImportError:
-        return "Instala pygame: pip install pygame"
-    except Exception as e:
-        return f"Error: {e}"
+class WebMusicController:
+    def __init__(self):
+        self.current_service = None
+        self.current_tab_url = None
 
-def descargar_youtube_audio(url, carpeta_destino="./musica/"):
-    """Descarga audio de YouTube (requiere yt-dlp)"""
-    try:
-        if not os.path.exists(carpeta_destino):
-            os.makedirs(carpeta_destino)
+    def play_music_web(self, servicio, busqueda=None):
+        servicio_lower = servicio.lower().strip() if servicio else ""
 
-        # Comando para yt-dlp
-        comando = [
-            "yt-dlp",
-            "--extract-audio",
-            "--audio-format", "mp3",
-            "--audio-quality", "192K",
-            "-o", f"{carpeta_destino}%(title)s.%(ext)s",
-            url
+        service_mapping = {
+            'youtube': f"https://www.youtube.com/results?search_query={quote(busqueda) if busqueda else ''}",
+            'spotify': f"https://open.spotify.com/search/{quote(busqueda) if busqueda else ''}",
+            'soundcloud': f"https://soundcloud.com/search?q={quote(busqueda) if busqueda else ''}",
+            'apple music': f"https://music.apple.com/search?term={quote(busqueda) if busqueda else ''}",
+            'amazon music': f"https://music.amazon.com/search/{quote(busqueda) if busqueda else ''}",
+            'deezer': f"https://www.deezer.com/search/{quote(busqueda) if busqueda else ''}",
+            'tidal': f"https://tidal.com/search?q={quote(busqueda) if busqueda else ''}"
+        }
+
+        for service_key, url in service_mapping.items():
+            if service_key in servicio_lower:
+                try:
+                    webbrowser.open(url)
+                    self.current_service = service_key
+                    self.current_tab_url = url
+                    return f"Abriendo {service_key} {'con búsqueda: ' + busqueda if busqueda else ''}"
+                except Exception as e:
+                    return f"Error al abrir {service_key}: {e}"
+
+        return f"Servicio '{servicio}' no reconocido"
+
+    def pause_music_universal(self):
+        methods = [
+            ("Media Key", lambda: pyautogui.press('playpause')),
+            ("Spacebar", lambda: pyautogui.press('space')),
+            ("K Key", lambda: pyautogui.press('k'))
         ]
 
-        resultado = subprocess.run(comando, capture_output=True, text=True)
-        if resultado.returncode == 0:
-            return f"Audio descargado exitosamente en {carpeta_destino}"
-        else:
-            return f"Error: {resultado.stderr}"
-    except FileNotFoundError:
-        return "Instala yt-dlp: pip install yt-dlp"
+        for method_name, method_func in methods:
+            try:
+                method_func()
+                return f"Música pausada/reanudada usando {method_name}"
+            except Exception as e:
+                continue
 
-def vlc_control(archivo_musica=None, accion="play"):
-    vlc_path = r"C:\Program Files\VideoLAN\VLC\vlc.exe"  # Ruta típica en Windows
+        return "No se pudo pausar la música con métodos estándar"
 
-    if archivo_musica:
-        if os.path.exists(vlc_path):
-            subprocess.Popen([vlc_path, archivo_musica])
-            return f"Reproduciendo {archivo_musica} en VLC"
-        else:
-            return "VLC no encontrado. Instala VLC Media Player"
-    else:
-        return "Especifica un archivo de música"
-
-def windows_media_player(archivo_musica):
-    if os.name == 'nt' and archivo_musica:
-        os.startfile(archivo_musica)
-        return f"Reproduciendo {archivo_musica}"
-    return "Solo funciona en Windows"
-
-def reproductor_inteligente(busqueda, modo="web"):
-
-    if modo == "web":
-        # Buscar en YouTube
-        url_youtube = f"https://www.youtube.com/results?search_query={quote(busqueda + ' audio')}"
-        webbrowser.open(url_youtube)
-        return f"🔍 Buscando '{busqueda}' en YouTube"
-
-    elif modo == "local":
-        # Buscar archivos locales
-        extensiones = ['.mp3', '.wav', '.flac', '.m4a', '.ogg']
-        carpetas_musica = [
-            os.path.expanduser("~/Music"),
-            os.path.expanduser("~/Downloads"),
-            "./musica/"
-        ]
-
-        for carpeta in carpetas_musica:
-            if os.path.exists(carpeta):
-                for archivo in os.listdir(carpeta):
-                    if any(archivo.lower().endswith(ext) for ext in extensiones):
-                        if busqueda.lower() in archivo.lower():
-                            archivo_completo = os.path.join(carpeta, archivo)
-                            return reproducir_audio_pygame(archivo_completo)
-
-        return f"❌ No se encontró '{busqueda}' en archivos locales"
-
-    elif modo == "descargar":
-        # Buscar en YouTube y descargar
-        url_busqueda = f"ytsearch:\"{busqueda}\""
-        return descargar_youtube_audio(url_busqueda)
-
-
-def play_music_web(servicio, busqueda=None):
-    servicio_lower = servicio.lower().strip() if servicio else ""
-
-    service_mapping = {
-        'youtube': f"https://www.youtube.com/results?search_query={quote(busqueda) if busqueda else ''}",
-        'spotify': f"https://open.spotify.com/search/{quote(busqueda) if busqueda else ''}",
-        'soundcloud': f"https://soundcloud.com/search?q={quote(busqueda) if busqueda else ''}",
-        'apple music': f"https://music.apple.com/search?term={quote(busqueda) if busqueda else ''}",
-        'amazon music': f"https://music.amazon.com/search/{quote(busqueda) if busqueda else ''}",
-        'deezer': f"https://www.deezer.com/search/{quote(busqueda) if busqueda else ''}",
-        'tidal': f"https://tidal.com/search?q={quote(busqueda) if busqueda else ''}"
-    }
-
-    url_to_open = None
-    service_name = None
-
-    for service_key, url in service_mapping.items():
-        if service_key in servicio_lower:
-            url_to_open = url
-            service_name = service_key
-            break
-
-    if url_to_open:
+    def pause_spotify(self):
         try:
-            webbrowser.open(url_to_open)
-            return f"Abriendo {service_name} {'con búsqueda: ' + busqueda if busqueda else ''}"
+            pyautogui.press('playpause')
+            return "Spotify pausado/reanudado"
+        except:
+            try:
+                pyautogui.press('space')
+                return "Spotify pausado con spacebar"
+            except:
+                return "No se pudo pausar Spotify"
+
+    def pause_soundcloud(self):
+        try:
+            pyautogui.press('space')
+            return "SoundCloud pausado/reanudado"
+        except:
+            try:
+                pyautogui.hotkey('alt', 'shift', 'p')  # Requiere extensión
+                return "SoundCloud pausado con atajo"
+            except:
+                return "No se pudo pausar SoundCloud"
+
+    def pause_apple_music(self):
+        try:
+            pyautogui.press('playpause')
+            return "Apple Music pausado/reanudado"
+        except:
+            try:
+                pyautogui.press('space')
+                return "Apple Music pausado con spacebar"
+            except:
+                return "No se pudo pausar Apple Music"
+
+    def pause_amazon_music(self):
+        try:
+            pyautogui.press('playpause')
+            return "Amazon Music pausado/reanudado"
+        except:
+            try:
+                pyautogui.press('space')
+                return "Amazon Music pausado con spacebar"
+            except:
+                return "No se pudo pausar Amazon Music"
+
+    def pause_deezer(self):
+        try:
+            pyautogui.press('playpause')
+            return "Deezer pausado/reanudado"
+        except:
+            try:
+                pyautogui.press('space')
+                return "Deezer pausado con spacebar"
+            except:
+                return "No se pudo pausar Deezer"
+
+    def pause_tidal(self):
+        try:
+            pyautogui.press('playpause')
+            return "Tidal pausado/reanudado"
+        except:
+            try:
+                pyautogui.press('space')
+                return "Tidal pausado con spacebar"
+            except:
+                return "No se pudo pausar Tidal"
+
+    def pause_current_service(self):
+        if not self.current_service:
+            return self.pause_music_universal()
+
+        service_methods = {
+            'spotify': self.pause_spotify,
+            'soundcloud': self.pause_soundcloud,
+            'apple music': self.pause_apple_music,
+            'amazon music': self.pause_amazon_music,
+            'deezer': self.pause_deezer,
+            'tidal': self.pause_tidal,
+            'youtube': lambda: self.pause_youtube()
+        }
+
+        if self.current_service in service_methods:
+            return service_methods[self.current_service]()
+        else:
+            return self.pause_music_universal()
+
+    def pause_youtube(self):
+        try:
+            pyautogui.press('k')  # YouTube usa 'k' para pause/play
+            return "YouTube pausado/reanudado con K"
+        except:
+            try:
+                pyautogui.press('space')
+                return "YouTube pausado con spacebar"
+            except:
+                return "No se pudo pausar YouTube"
+
+    def stop_all_music(self):
+        try:
+            # Opción 1: Cerrar pestaña actual
+            pyautogui.hotkey('ctrl', 'w')
+            self.current_service = None
+            return "Pestaña de música cerrada"
+        except:
+            try:
+                # Opción 2: Silenciar sistema
+                pyautogui.press('volumemute')
+                return "Sistema silenciado"
+            except:
+                return "No se pudo detener la música"
+
+    def volume_control(self, action="mute"):
+        volume_commands = {'up':   {"volume up", "turn up volume", "louder", "increase volume", "raise volume"},
+                           'down': {"volume down", "turn down volume", "decrease volume", "lower volume", "quieter"},
+                           'mute': {"mute", "silence", "quiet", "turn off sound", "mute audio","unmmute","audio","turn on audio","turn on"}
+                           }
+        try:
+            action_lower = action.lower().strip()
+
+            command_type = None
+            for cmd_type, keywords in volume_commands.items():
+                if any(keyword in action_lower for keyword in keywords):
+                    command_type = cmd_type
+                    break
+
+            if not command_type: command_type = action_lower
+            elif command_type == None: speak("en-US","You didnt say any command volume")
+
+            if command_type == "up":
+                pyautogui.press('volumeup')
+                return speak("en-US","Volume increased")
+            elif command_type == "down":
+                pyautogui.press('volumedown')
+                return speak("en-US","Volume decreased")
+            elif command_type == "mute":
+                pyautogui.press('volumemute')
+                return speak("en-US","Audio muted/reactivated")
         except Exception as e:
-            return f"Error al abrir {service_name}: {e}"
-    else:
-        available_services = list(service_mapping.keys())
-        return f"Servicio '{servicio}' no reconocido. Servicios disponibles: {', '.join(available_services)}"
+            return f"vollume error: {e}"
+
+
+music_controller = WebMusicController()
+
+def volume(volume_command):
+    return music_controller.volume_control(volume_command)
+
+def play_music_web(services,search):
+    return music_controller.play_music_web(services,search)
+
+def pause_web_music():
+    return music_controller.pause_current_service()
+
+def stop_web_music():
+    return music_controller.stop_all_music()
+
+def play_music_service(service, search=None):
+    return music_controller.play_music_web(service, search)
 

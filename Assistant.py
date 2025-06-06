@@ -1,13 +1,13 @@
 from Json_Languages import *
-from SetLenguage import *
 from RecognizeLanguage import *
 from country_weather import *
 from music import *
 import time
 
+language = detect_language()
+
 try:
     city, lat, lon = get_IP()
-    language = detect_language()
     keep_going = True
 
     if language:
@@ -49,7 +49,7 @@ try:
                         speak(language, f"You said {search}")
 
                         if search and search.strip():
-                            play_music_web(services, search)
+                         play_music_web(services, search)
                         else:
                             speak(language, "I didn't catch what music you want to play")
                     else:
@@ -57,23 +57,22 @@ try:
 
                 #stop music
                 if command in commands_voice(4):
-                    # speak(language, response_voice(4))
-                    print()
+                    pause_web_music()
+                    speak(language, response_voice(4))
 
                 #volume
                 if command in commands_voice(5):
-                    speak(language, response_voice(5))
-                    print()
+                    volume_command = listen_in_language(language)
+                    speak(language, f"You said {volume_command}")
+                    volume(volume_command)
 
                 #search
                 if command in commands_voice(6):
                     speak(language, response_voice(6))
-                    print()
 
                 #hello
                 if command in commands_voice(7):
                     speak(language, response_voice(7))
-
 
                 #help
                 if command in commands_voice(8):
@@ -82,7 +81,7 @@ try:
                 #joke
                 if command in commands_voice(9):
                     speak(language, response_voice(9))
-                    print()
+                    #poner alguna broma
 
                 #exit
                 if command in commands_voice(10):
@@ -91,4 +90,5 @@ try:
                 else:
                     continue
 except Exception as e:
-    print(f"there was an issue: {e}")
+    speak(language,"there was an issue")
+    print(f"the issue: {e}")
