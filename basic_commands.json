@@ -17,8 +17,7 @@
       "response": "Music stopped"
     },
     "volume": {
-      "keywords": ["volume up", "turn up volume", "louder", "increase volume"],
-      "response": "Increasing volume"
+      "keywords": ["volume up", "turn up volume", "louder", "increase volume", "raise volume","volume down", "turn down volume", "decrease volume", "lower volume", "quieter","mute", "silence", "quiet", "turn off sound", "mute audio","unmmute","audio","turn on audio","turn on"]
     },
     "search": {
       "keywords": ["search for", "look up", "find", "google"],
