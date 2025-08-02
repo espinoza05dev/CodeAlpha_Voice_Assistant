@@ -1,10 +1,8 @@
-import os
-import subprocess
-import time
 import pyautogui
 import webbrowser
+import Json_Languages as jl
 from urllib.parse import quote
-from SetLenguage import speak
+
 
 class WebMusicController:
     def __init__(self):
@@ -177,17 +175,17 @@ class WebMusicController:
                     break
 
             if not command_type: command_type = action_lower
-            elif command_type == None: speak("en-US","You didnt say any command volume")
+            elif command_type == None: jl.speak("en-US","You didnt say any command volume")
 
             if command_type == "up":
                 pyautogui.press('volumeup')
-                return speak("en-US","Volume increased")
+                return jl.speak("en-US","Volume increased")
             elif command_type == "down":
                 pyautogui.press('volumedown')
-                return speak("en-US","Volume decreased")
+                return jl.speak("en-US","Volume decreased")
             elif command_type == "mute":
                 pyautogui.press('volumemute')
-                return speak("en-US","Audio muted/reactivated")
+                return jl.speak("en-US","Audio muted/reactivated")
         except Exception as e:
             return f"vollume error: {e}"
 
